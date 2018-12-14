@@ -1,22 +1,38 @@
-# Alignment-Free phylogenetic tree construction from .fasta sequence files
+# Alignment-Free phylogenetic tree construction
+
+Constructs a phylogenetic tree in [Newick tree format](https://en.wikipedia.org/wiki/Newick_format) using *.fasta* or *.paml* nucleotide sequence files as input.
 
 # Distance measures used:
 1. Cosine distance
 2. Mahalanobis distance
-3. Fractional k-mer count (best performing)
+3. Fractional k-mer count
 
 # Instructions
 To compile using gcc under Linux (tested using version 7.3.1)
 ```
-make AFP  [OR]   g++ AFP.cpp -o AFP
+make AFP    g++ AFP.cpp -o AFP
 ```
+or 
+```
+g++ AFP.cpp -o AFP
+```
+
 To run:
 ```
-./AFP
+./AFP filename.fasta
+```
+or 
+```
+./AFP filename.paml
 ```
 
 Running './AFP' without arguments or with a flag '-h' will display the help dialog with additional
 information.
+
+To generate random phylogenetic trees with N nodes:
+```
+./AFP -random N
+```
 
 Testing:
 To test on [.paml or .fasta] files add the filename as the first argument, E.G:
