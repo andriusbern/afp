@@ -17,21 +17,21 @@ using namespace std;
 
 void help() {
 	cout << "\nArgument help:\n";
-			"1st argument:\n";
-    		"            filename of the sequences ['.fasta' or '.paml'] format.\n";
-			"            or\n";
-   			"            [-random INT] : generate a random distance matrix of size INT x INT and create a Newick format tree with INT leaf nodes\n\n";
-			"Additional arguments: \n";
-			"Methods for calculating the distance matrix based on kmer profiles of sequences:  \n\n";
-			"            [-m] : mahalanobis; \n";
-			"            [-c] : cosine. \n";
-			"            (default: fractional k-mer count)\n\n";
-			"kmer-length (default 8): \n";
-			"            [-k INT]:\n\n";
-			"Number of replicates to parse in .paml files of synthetic sequences (default 1): \n";
-			"            [-replicates INT]\n";
-			"            Outputs INT Newick trees each based on a different set of replicate sequences.\n\n";
-			"Verbose:    [-v]\n";
+	"1st argument:\n";
+"            filename of the sequences ['.fasta' or '.paml'] format.\n";
+	"            or\n";
+	"            [-random INT] : generate a random distance matrix of size INT x INT and create a Newick format tree with INT leaf nodes\n\n";
+	"Additional arguments: \n";
+	"Methods for calculating the distance matrix based on kmer profiles of sequences:  \n\n";
+	"            [-m] : mahalanobis; \n";
+	"            [-c] : cosine. \n";
+	"            (default: fractional k-mer count)\n\n";
+	"kmer-length (default 8): \n";
+	"            [-k INT]:\n\n";
+	"Number of replicates to parse in .paml files of synthetic sequences (default 1): \n";
+	"            [-replicates INT]\n";
+	"            Outputs INT Newick trees each based on a different set of replicate sequences.\n\n";
+	"Verbose:    [-v]\n";
 }
 
 ///////////////
